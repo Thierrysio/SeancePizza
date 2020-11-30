@@ -44,7 +44,6 @@ namespace SeancePizza
             /// 3 - Envoyer dans les textbox les datas
             /// 4 - Afficher dans le DGV les commandes deja passées
             /// 
-            
 
             textBox1.Text = this.GetClient(comboBox1.Text).Id.ToString();
             textBox2.Text = this.GetClient(comboBox1.Text).Nom;
@@ -107,7 +106,8 @@ namespace SeancePizza
         private void button4_Click(object sender, EventArgs e)
         {
             
-            Application.Run(new Form2(new Commande(DateTime.Now, this.GetClient(comboBox1.Text))));
+            Form  Form2 = new Form2(new Commande(DateTime.Now, this.GetClient(comboBox1.Text)));
+            Form2.ShowDialog();
         }
 
         public Client GetClient(string param)

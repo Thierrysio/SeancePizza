@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeancePizza.Modeles
 {
-    class Composant
+    public class Composant
     {
         #region Attributs
         public static List<Composant> CollClasseComposant = new List<Composant>();

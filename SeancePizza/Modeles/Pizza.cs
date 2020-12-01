@@ -38,7 +38,7 @@ namespace SeancePizza.Modeles
         #region Methodes
         private int NouvelIndex()
         {
-            return Commande.CollClasseCommande.Count + 1;
+            return Pizza.CollClassePizza.Count + 1;
         }
         #endregion
     }

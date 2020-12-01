@@ -15,7 +15,7 @@ namespace SeancePizza.Modeles
         private Client _leClient;
         private Dictionary<Pizza, int> _lesPizzas;
 
-
+       
         #endregion
         #region Constructeurs
         public Commande( DateTime laDate, Client leClient)

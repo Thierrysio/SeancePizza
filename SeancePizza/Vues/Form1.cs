@@ -106,6 +106,11 @@ namespace SeancePizza
         private void button4_Click(object sender, EventArgs e)
         {
             
+            if(textBox1.Text == "")
+            {
+                MessageBox.Show("Choisissez un client");
+                return;
+            }
             Form  Form2 = new Form2(new Commande(DateTime.Now, this.GetClient(comboBox1.Text)));
             Form2.ShowDialog();
         }

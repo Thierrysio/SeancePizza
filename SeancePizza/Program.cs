@@ -33,6 +33,14 @@ namespace SeancePizza
             Pizza P4 = new Pizza("margharita", 10.9);
             Pizza P5 = new Pizza("Peperoni", 11.9);
 
+            Composant CP1 = new Composant("composant 1", 100, 8.9);
+            Composant CP2 = new Composant("composant 2", 100, 8.9);
+            Composant CP3 = new Composant("composant 3", 100, 8.9);
+
+            P1.LesComposants.Add(CP1);
+            P1.LesComposants.Add(CP2);
+            P1.LesComposants.Add(CP2);
+
             CO1.LesPizzas.Add(P1, 1);
             CO1.LesPizzas.Add(P3, 1);
 
